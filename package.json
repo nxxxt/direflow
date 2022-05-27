@@ -8,7 +8,7 @@
     "test": "jest --env=jest-environment-jsdom-fourteen",
     "update-version": "node scripts/node/updateVersion.js",
     "setup-local": "./scripts/bash/setupLocal.sh",
-    "clean:all": "node ./scripts/node/cleanupAll.js",
+    "clean:all": "node ./scripts/node/cleanupAll.mjs",
     "install:all": "node ./scripts/node/installAll.js",
     "build:all": "node ./scripts/node/buildAll.js && npm run install:all -- --no-deps",
     "build:full": "npm run clean:all && npm run install:all && npm run build:all && npm run clean:all -- --modules",
